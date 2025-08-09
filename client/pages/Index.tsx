@@ -428,10 +428,26 @@ export default function Index() {
             <div>
               <h3 className="font-semibold mb-4">Programs</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Blockchain Education</li>
-                <li>Web3 Development</li>
-                <li>Community Building</li>
-                <li>IRL Meetups</li>
+                <li>
+                  <Link to="/programs/blockchain-education" className="hover:text-brand-purple transition-colors">
+                    Blockchain Education
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/programs/web3-development" className="hover:text-brand-purple transition-colors">
+                    Web3 Development
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/programs/community-building" className="hover:text-brand-purple transition-colors">
+                    Community Building
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/programs/irl-meetups" className="hover:text-brand-purple transition-colors">
+                    IRL Meetups
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
