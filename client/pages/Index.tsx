@@ -1,4 +1,4 @@
-import { ArrowRight, Users, Globe, MapPin, Target, Award, TrendingUp, BookOpen, Code, Zap } from 'lucide-react';
+import { ArrowRight, Users, Globe, MapPin, Target, Award, TrendingUp, BookOpen, Code, Zap, Camera, Calendar, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
