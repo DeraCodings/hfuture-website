@@ -1,22 +1,8 @@
-import { Link } from "react-router-dom";
-import {
-  ArrowRight,
-  Users,
-  Globe,
-  MapPin,
-  Target,
-  Award,
-  TrendingUp,
-  BookOpen,
-  Code,
-  Zap,
-  Camera,
-  Calendar,
-  Heart,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Link } from 'react-router-dom';
+import { ArrowRight, Users, Globe, MapPin, Target, Award, TrendingUp, BookOpen, Code, Zap, Camera, Calendar, Heart } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 
 export default function Index() {
   const achievements = [
@@ -24,131 +10,166 @@ export default function Index() {
       icon: Users,
       number: "500+",
       label: "Individuals Onboarded",
-      description: "Through comprehensive free training programs",
+      description: "Through comprehensive free training programs"
     },
     {
       icon: Globe,
       number: "Multiple",
       label: "Global Partnerships",
-      description: "With leading blockchain networks worldwide",
+      description: "With leading blockchain networks worldwide"
     },
     {
       icon: TrendingUp,
       number: "Ongoing",
       label: "IRL Meetups",
-      description: "Building strong community connections",
-    },
+      description: "Building strong community connections"
+    }
   ];
 
   const features = [
     {
       icon: BookOpen,
       title: "Education First",
-      description:
-        "Comprehensive blockchain and Web3 training programs designed for beginners",
+      description: "Comprehensive blockchain and Web3 training programs designed for beginners"
     },
     {
       icon: Code,
       title: "Hands-on Development",
-      description:
-        "Practical coding experience with real-world blockchain projects",
+      description: "Practical coding experience with real-world blockchain projects"
     },
     {
       icon: Users,
       title: "Community Building",
-      description:
-        "Foster inclusive communities of Web3 builders across Nigeria",
+      description: "Foster inclusive communities of Web3 builders across Nigeria"
     },
     {
       icon: Target,
       title: "Sustainable Impact",
-      description:
-        "Create long-term contributors to global blockchain ecosystems",
-    },
+      description: "Create long-term contributors to global blockchain ecosystems"
+    }
   ];
+
+  // const eventPhotos = [
+  //   {
+  //     id: 1,
+  //     title: "Web3 Workshop Lagos",
+  //     description: "50+ developers learning blockchain fundamentals",
+  //     image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop&crop=center",
+  //     date: "March 2024"
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "DeFi Training Session",
+  //     description: "Hands-on DeFi development workshop",
+  //     image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&crop=center",
+  //     date: "February 2024"
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Community Meetup Abuja",
+  //     description: "Building connections across Nigeria",
+  //     image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&h=400&fit=crop&crop=center",
+  //     date: "January 2024"
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Smart Contract Bootcamp",
+  //     description: "Intensive Solidity development program",
+  //     image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&h=400&fit=crop&crop=center",
+  //     date: "December 2023"
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Women in Web3 Event",
+  //     description: "Empowering female blockchain developers",
+  //     image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=400&fit=crop&crop=center",
+  //     date: "November 2023"
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Hackathon Finals",
+  //     description: "48-hour blockchain innovation challenge",
+  //     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop&crop=center",
+  //     date: "October 2023"
+  //   }
+  // ];
 
   const eventPhotos = [
     {
       id: 1,
-      title: "Web3 Workshop Lagos",
-      description: "50+ developers learning blockchain fundamentals",
-      image:
-        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop&crop=center",
-      date: "March 2024",
+      title: "ETH@10yr Anniversary",
+      description: "Hands-on Refi and smart contract development workshop",
+      image: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754772075/1754771842832_tf8pob.jpg",
+      date: "February 2024"
     },
     {
       id: 2,
-      title: "DeFi Training Session",
-      description: "Hands-on DeFi development workshop",
-      image:
-        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&crop=center",
-      date: "February 2024",
+      title: "Web3 Workshop Lagos",
+      description: "50+ developers learning blockchain fundamentals",
+      image: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754771459/fec8vt_yfqol0.jpg",
+      date: "March 2024"
     },
     {
       id: 3,
       title: "Community Meetup Abuja",
       description: "Building connections across Nigeria",
-      image:
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&h=400&fit=crop&crop=center",
-      date: "January 2024",
+      image: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754771459/IMG-20240316-WA0044_kjd5wp.jpg",
+      date: "January 2024"
     },
     {
       id: 4,
       title: "Smart Contract Bootcamp",
       description: "Intensive Solidity development program",
-      image:
-        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&h=400&fit=crop&crop=center",
-      date: "December 2023",
+      image: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754771459/IMG-20240324-WA0036_rowbsd.jpg",
+      date: "December 2023"
     },
     {
       id: 5,
       title: "Women in Web3 Event",
       description: "Empowering female blockchain developers",
-      image:
-        "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=400&fit=crop&crop=center",
-      date: "November 2023",
+      image: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754771459/IMG-20240324-WA0026_vwbj83.jpg",
+      date: "November 2023"
     },
     {
       id: 6,
       title: "Hackathon Finals",
       description: "48-hour blockchain innovation challenge",
-      image:
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop&crop=center",
-      date: "October 2023",
-    },
+      image: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754771459/IMG-20240324-WA0033_v4t9cm.jpg",
+      date: "October 2023"
+    }
   ];
 
   const partners = [
     {
       name: "Ethereum Foundation",
       logo: "https://ethereum.org/static/655aaefb744ae2f9f818095c41a0580b/f3a29/ethereum-logo-portrait-black.png",
-      type: "Blockchain Network",
+      type: "Blockchain Network"
     },
     {
       name: "Polygon",
       logo: "https://polygon.technology/favicon-32x32.png",
-      type: "Layer 2 Solution",
+      type: "Layer 2 Solution"
     },
     {
       name: "Chainlink",
       logo: "https://chainlinklabs.com/favicon-32x32.png",
-      type: "Oracle Network",
+      type: "Oracle Network"
     },
     {
       name: "Solana Foundation",
       logo: "https://solana.com/favicon-32x32.png",
-      type: "Blockchain Platform",
+      type: "Blockchain Platform"
     },
     {
       name: "Binance Smart Chain",
       logo: "https://www.bnbchain.org/static/favicon-16x16.png",
-      type: "Blockchain Network",
+      type: "Blockchain Network"
     },
     {
       name: "Avalanche",
       logo: "https://www.avax.network/favicon-32x32.png",
-      type: "Blockchain Platform",
-    },
+      type: "Blockchain Platform"
+    }
   ];
 
   return (
@@ -166,22 +187,13 @@ export default function Index() {
               </span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <a
-                href="#mission"
-                className="text-sm font-medium hover:text-brand-purple transition-colors"
-              >
+              <a href="#mission" className="text-sm font-medium hover:text-brand-purple transition-colors">
                 Mission
               </a>
-              <a
-                href="#achievements"
-                className="text-sm font-medium hover:text-brand-purple transition-colors"
-              >
+              <a href="#achievements" className="text-sm font-medium hover:text-brand-purple transition-colors">
                 Achievements
               </a>
-              <a
-                href="#impact"
-                className="text-sm font-medium hover:text-brand-purple transition-colors"
-              >
+              <a href="#impact" className="text-sm font-medium hover:text-brand-purple transition-colors">
                 Impact
               </a>
               <Button className="bg-brand-gradient hover:opacity-90 text-white">
@@ -202,29 +214,21 @@ export default function Index() {
               Based in Nigeria, Impacting Globally
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Empowering Africa's{" "}
+              Empowering Africa's{' '}
               <span className="bg-brand-gradient bg-clip-text text-transparent">
                 Web3 Future
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
-              HfuturelHub is a psycho-tech blockchain educational platform
-              onboarding underrepresented communities into sustainable Web3
-              careers
+              HfuturelHub is a psycho-tech blockchain educational platform onboarding 
+              underrepresented communities into sustainable Web3 careers
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-brand-gradient hover:opacity-90 text-white text-lg px-8"
-              >
+              <Button size="lg" className="bg-brand-gradient hover:opacity-90 text-white text-lg px-8">
                 Learn About Our Impact
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-brand-purple text-brand-purple hover:bg-brand-purple/5 text-lg px-8"
-              >
+              <Button size="lg" variant="outline" className="border-brand-purple text-brand-purple hover:bg-brand-purple/5 text-lg px-8">
                 Partner With Us
               </Button>
             </div>
@@ -245,10 +249,7 @@ export default function Index() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
-              <Card
-                key={index}
-                className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow"
-              >
+              <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-8">
                   <div className="mb-6">
                     <div className="w-16 h-16 mx-auto bg-brand-gradient rounded-full flex items-center justify-center mb-4">
@@ -257,12 +258,8 @@ export default function Index() {
                     <div className="text-3xl md:text-4xl font-bold text-brand-purple mb-2">
                       {achievement.number}
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">
-                      {achievement.label}
-                    </h3>
-                    <p className="text-muted-foreground">
-                      {achievement.description}
-                    </p>
+                    <h3 className="text-xl font-semibold mb-3">{achievement.label}</h3>
+                    <p className="text-muted-foreground">{achievement.description}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -280,14 +277,13 @@ export default function Index() {
                 Our <span className="text-brand-green">Mission</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                To onboard, create, design and develop models that train and
-                incubate local Web3 builders from underrepresented regions to
-                become sustainable contributors to blockchain ecosystems.
+                To onboard, create, design and develop models that train and incubate 
+                local Web3 builders from underrepresented regions to become sustainable 
+                contributors to blockchain ecosystems.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                We believe in democratizing access to blockchain technology and
-                creating pathways for African talent to participate meaningfully
-                in the global Web3 economy.
+                We believe in democratizing access to blockchain technology and creating 
+                pathways for African talent to participate meaningfully in the global Web3 economy.
               </p>
               <Button className="bg-brand-green hover:bg-brand-green/90 text-white">
                 Read Our Full Story
@@ -296,15 +292,10 @@ export default function Index() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {features.map((feature, index) => (
-                <Card
-                  key={index}
-                  className="p-6 hover:shadow-lg transition-shadow"
-                >
+                <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
                   <feature.icon className="h-8 w-8 text-brand-purple mb-4" />
                   <h3 className="font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">
-                    {feature.description}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{feature.description}</p>
                 </Card>
               ))}
             </div>
@@ -320,17 +311,13 @@ export default function Index() {
               Our <span className="text-brand-purple">Community Events</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Bringing the Web3 community together through hands-on workshops,
-              training sessions, and networking events across Nigeria
+              Bringing the Web3 community together through hands-on workshops, training sessions, and networking events across Nigeria
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {eventPhotos.map((event, index) => (
-              <Card
-                key={event.id}
-                className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
+              <Card key={event.id} className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative overflow-hidden">
                   <img
                     src={event.image}
@@ -345,9 +332,7 @@ export default function Index() {
                     </Badge>
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="text-white font-semibold text-lg mb-1">
-                      {event.title}
-                    </h3>
+                    <h3 className="text-white font-semibold text-lg mb-1">{event.title}</h3>
                     <p className="text-white/90 text-sm">{event.description}</p>
                   </div>
                 </div>
@@ -372,8 +357,7 @@ export default function Index() {
               Our <span className="text-brand-green">Global Partners</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Collaborating with leading blockchain networks and organizations
-              to provide world-class education and opportunities
+              Collaborating with leading blockchain networks and organizations to provide world-class education and opportunities
             </p>
           </div>
 
@@ -387,7 +371,7 @@ export default function Index() {
                     className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      target.src = `https://via.placeholder.com/100x60/8B5CF6/FFFFFF?text=${partner.name.split(" ")[0]}`;
+                      target.src = `https://via.placeholder.com/100x60/8B5CF6/FFFFFF?text=${partner.name.split(' ')[0]}`;
                     }}
                   />
                 </Card>
@@ -402,10 +386,7 @@ export default function Index() {
             <p className="text-muted-foreground mb-6">
               Want to partner with us in building Africa's Web3 future?
             </p>
-            <Button
-              variant="outline"
-              className="border-brand-green text-brand-green hover:bg-brand-green/5"
-            >
+            <Button variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green/5">
               <Heart className="mr-2 h-4 w-4" />
               Become a Partner
             </Button>
@@ -421,32 +402,25 @@ export default function Index() {
               Driving Sustainable Impact
             </h2>
             <p className="text-xl mb-8 opacity-90 leading-relaxed">
-              Through strategic partnerships, comprehensive education, and
-              community building, we're creating a sustainable pipeline of
-              African Web3 talent ready to contribute to the global blockchain
-              ecosystem.
+              Through strategic partnerships, comprehensive education, and community building, 
+              we're creating a sustainable pipeline of African Web3 talent ready to contribute 
+              to the global blockchain ecosystem.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
                 <Award className="h-12 w-12 mx-auto mb-4 opacity-90" />
                 <h3 className="text-lg font-semibold mb-2">Recognition</h3>
-                <p className="opacity-80">
-                  Building credibility through measurable outcomes
-                </p>
+                <p className="opacity-80">Building credibility through measurable outcomes</p>
               </div>
               <div className="text-center">
                 <Globe className="h-12 w-12 mx-auto mb-4 opacity-90" />
                 <h3 className="text-lg font-semibold mb-2">Global Reach</h3>
-                <p className="opacity-80">
-                  Connecting local talent to international opportunities
-                </p>
+                <p className="opacity-80">Connecting local talent to international opportunities</p>
               </div>
               <div className="text-center">
                 <TrendingUp className="h-12 w-12 mx-auto mb-4 opacity-90" />
                 <h3 className="text-lg font-semibold mb-2">Growth</h3>
-                <p className="opacity-80">
-                  Scaling impact across underrepresented regions
-                </p>
+                <p className="opacity-80">Scaling impact across underrepresented regions</p>
               </div>
             </div>
           </div>
@@ -461,21 +435,14 @@ export default function Index() {
               Ready to Support Our Mission?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Join us in building a more inclusive and diverse Web3 ecosystem.
+              Join us in building a more inclusive and diverse Web3 ecosystem. 
               Your support enables us to continue our impactful work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-brand-gradient hover:opacity-90 text-white"
-              >
+              <Button size="lg" className="bg-brand-gradient hover:opacity-90 text-white">
                 Become a Partner
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-brand-purple text-brand-purple hover:bg-brand-purple/5"
-              >
+              <Button size="lg" variant="outline" className="border-brand-purple text-brand-purple hover:bg-brand-purple/5">
                 Grant Opportunities
               </Button>
             </div>
@@ -497,8 +464,8 @@ export default function Index() {
                 </span>
               </div>
               <p className="text-muted-foreground mb-4 max-w-md">
-                Empowering underrepresented communities through blockchain
-                education and sustainable Web3 career development.
+                Empowering underrepresented communities through blockchain education 
+                and sustainable Web3 career development.
               </p>
               <p className="text-sm text-muted-foreground">
                 📍 Based in Nigeria, Impacting Globally
@@ -508,34 +475,22 @@ export default function Index() {
               <h3 className="font-semibold mb-4">Programs</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link
-                    to="/programs/blockchain-education"
-                    className="hover:text-brand-purple transition-colors"
-                  >
+                  <Link to="/programs/blockchain-education" className="hover:text-brand-purple transition-colors">
                     Blockchain Education
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/programs/web3-development"
-                    className="hover:text-brand-purple transition-colors"
-                  >
+                  <Link to="/programs/web3-development" className="hover:text-brand-purple transition-colors">
                     Web3 Development
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/programs/community-building"
-                    className="hover:text-brand-purple transition-colors"
-                  >
+                  <Link to="/programs/community-building" className="hover:text-brand-purple transition-colors">
                     Community Building
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/programs/irl-meetups"
-                    className="hover:text-brand-purple transition-colors"
-                  >
+                  <Link to="/programs/irl-meetups" className="hover:text-brand-purple transition-colors">
                     IRL Meetups
                   </Link>
                 </li>
