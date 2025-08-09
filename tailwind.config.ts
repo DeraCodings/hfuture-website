@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        brand: {
+          purple: "hsl(var(--brand-purple))",
+          "purple-dark": "hsl(var(--brand-purple-dark))",
+          green: "hsl(var(--brand-green))",
+          "green-light": "hsl(var(--brand-green-light))",
+          blue: "hsl(var(--brand-blue))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +69,13 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'brand-gradient': 'linear-gradient(135deg, hsl(var(--brand-gradient-start)), hsl(var(--brand-gradient-end)))',
+        'brand-gradient-radial': 'radial-gradient(ellipse at center, hsl(var(--brand-gradient-start)), hsl(var(--brand-gradient-end)))',
+      },
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
