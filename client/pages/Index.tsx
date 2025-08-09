@@ -257,6 +257,97 @@ export default function Index() {
         </div>
       </section>
 
+      {/* IRL Events Gallery Section */}
+      <section className="py-16 lg:py-24 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our <span className="text-brand-purple">Community Events</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Bringing the Web3 community together through hands-on workshops, training sessions, and networking events across Nigeria
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {eventPhotos.map((event, index) => (
+              <Card key={event.id} className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-white/90 text-brand-purple border-0">
+                      <Calendar className="w-3 h-3 mr-1" />
+                      {event.date}
+                    </Badge>
+                  </div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-white font-semibold text-lg mb-1">{event.title}</h3>
+                    <p className="text-white/90 text-sm">{event.description}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button className="bg-brand-purple hover:bg-brand-purple-dark text-white">
+              <Camera className="mr-2 h-4 w-4" />
+              View All Event Photos
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="py-16 lg:py-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our <span className="text-brand-green">Global Partners</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Collaborating with leading blockchain networks and organizations to provide world-class education and opportunities
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+            {partners.map((partner, index) => (
+              <div key={index} className="group">
+                <Card className="p-6 w-24 h-24 flex items-center justify-center hover:shadow-lg transition-shadow border-2 hover:border-brand-green/20">
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = `https://via.placeholder.com/100x60/8B5CF6/FFFFFF?text=${partner.name.split(' ')[0]}`;
+                    }}
+                  />
+                </Card>
+                <p className="text-xs text-center mt-2 text-muted-foreground group-hover:text-brand-green transition-colors">
+                  {partner.name}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-6">
+              Want to partner with us in building Africa's Web3 future?
+            </p>
+            <Button variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green/5">
+              <Heart className="mr-2 h-4 w-4" />
+              Become a Partner
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Impact Section */}
       <section id="impact" className="py-16 lg:py-24 bg-brand-gradient">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
