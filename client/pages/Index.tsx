@@ -48,6 +48,84 @@ export default function Index() {
     }
   ];
 
+  const eventPhotos = [
+    {
+      id: 1,
+      title: "Web3 Workshop Lagos",
+      description: "50+ developers learning blockchain fundamentals",
+      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop&crop=center",
+      date: "March 2024"
+    },
+    {
+      id: 2,
+      title: "DeFi Training Session",
+      description: "Hands-on DeFi development workshop",
+      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&crop=center",
+      date: "February 2024"
+    },
+    {
+      id: 3,
+      title: "Community Meetup Abuja",
+      description: "Building connections across Nigeria",
+      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&h=400&fit=crop&crop=center",
+      date: "January 2024"
+    },
+    {
+      id: 4,
+      title: "Smart Contract Bootcamp",
+      description: "Intensive Solidity development program",
+      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=600&h=400&fit=crop&crop=center",
+      date: "December 2023"
+    },
+    {
+      id: 5,
+      title: "Women in Web3 Event",
+      description: "Empowering female blockchain developers",
+      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=400&fit=crop&crop=center",
+      date: "November 2023"
+    },
+    {
+      id: 6,
+      title: "Hackathon Finals",
+      description: "48-hour blockchain innovation challenge",
+      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop&crop=center",
+      date: "October 2023"
+    }
+  ];
+
+  const partners = [
+    {
+      name: "Ethereum Foundation",
+      logo: "https://ethereum.org/static/655aaefb744ae2f9f818095c41a0580b/f3a29/ethereum-logo-portrait-black.png",
+      type: "Blockchain Network"
+    },
+    {
+      name: "Polygon",
+      logo: "https://polygon.technology/favicon-32x32.png",
+      type: "Layer 2 Solution"
+    },
+    {
+      name: "Chainlink",
+      logo: "https://chainlinklabs.com/favicon-32x32.png",
+      type: "Oracle Network"
+    },
+    {
+      name: "Solana Foundation",
+      logo: "https://solana.com/favicon-32x32.png",
+      type: "Blockchain Platform"
+    },
+    {
+      name: "Binance Smart Chain",
+      logo: "https://www.bnbchain.org/static/favicon-16x16.png",
+      type: "Blockchain Network"
+    },
+    {
+      name: "Avalanche",
+      logo: "https://www.avax.network/favicon-32x32.png",
+      type: "Blockchain Platform"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
