@@ -1,55 +1,89 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, BookOpen, Users, Clock, Award, Target, CheckCircle, Zap, Calendar } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  ArrowLeft,
+  BookOpen,
+  Users,
+  Clock,
+  Award,
+  Target,
+  CheckCircle,
+  Zap,
+  Calendar,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export default function BlockchainEducation() {
   const curriculumModules = [
     {
       week: "Week 1-2",
       title: "Blockchain Fundamentals",
-      topics: ["What is Blockchain?", "Decentralization Concepts", "Cryptocurrency Basics", "Bitcoin & Ethereum Overview"]
+      topics: [
+        "What is Blockchain?",
+        "Decentralization Concepts",
+        "Cryptocurrency Basics",
+        "Bitcoin & Ethereum Overview",
+      ],
     },
     {
-      week: "Week 3-4", 
+      week: "Week 3-4",
       title: "Smart Contracts",
-      topics: ["Introduction to Smart Contracts", "Solidity Basics", "Contract Deployment", "Testing Smart Contracts"]
+      topics: [
+        "Introduction to Smart Contracts",
+        "Solidity Basics",
+        "Contract Deployment",
+        "Testing Smart Contracts",
+      ],
     },
     {
       week: "Week 5-6",
       title: "DeFi Protocols",
-      topics: ["Decentralized Finance", "AMMs & Liquidity Pools", "Yield Farming", "Protocol Governance"]
+      topics: [
+        "Decentralized Finance",
+        "AMMs & Liquidity Pools",
+        "Yield Farming",
+        "Protocol Governance",
+      ],
     },
     {
       week: "Week 7-8",
       title: "NFTs & Web3",
-      topics: ["Non-Fungible Tokens", "Metadata Standards", "Web3 Integration", "dApp Development"]
-    }
+      topics: [
+        "Non-Fungible Tokens",
+        "Metadata Standards",
+        "Web3 Integration",
+        "dApp Development",
+      ],
+    },
   ];
 
   const benefits = [
     {
       icon: BookOpen,
       title: "Comprehensive Curriculum",
-      description: "8-week structured program covering blockchain fundamentals to advanced concepts"
+      description:
+        "8-week structured program covering blockchain fundamentals to advanced concepts",
     },
     {
       icon: Users,
       title: "Expert Instructors",
-      description: "Learn from experienced blockchain developers and industry professionals"
+      description:
+        "Learn from experienced blockchain developers and industry professionals",
     },
     {
       icon: Target,
       title: "Practical Projects",
-      description: "Build real-world blockchain applications and smart contracts"
+      description:
+        "Build real-world blockchain applications and smart contracts",
     },
     {
       icon: Award,
       title: "Certification",
-      description: "Receive verified certificates upon successful program completion"
-    }
+      description:
+        "Receive verified certificates upon successful program completion",
+    },
   ];
 
   return (
@@ -62,7 +96,10 @@ export default function BlockchainEducation() {
               <div className="h-8 w-8 rounded-lg bg-brand-gradient flex items-center justify-center">
                 <Zap className="h-5 w-5 text-white" />
               </div>
-              <Link to="/" className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
+              <Link
+                to="/"
+                className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent"
+              >
                 HFUTURETECH
               </Link>
             </div>
@@ -88,14 +125,23 @@ export default function BlockchainEducation() {
               Blockchain Education Program
             </h1>
             <p className="text-xl mb-8 opacity-90 leading-relaxed max-w-3xl mx-auto">
-              Master the fundamentals of blockchain technology through our comprehensive 8-week program. 
-              From basic concepts to advanced smart contract development, build the skills needed for a Web3 career.
+              Master the fundamentals of blockchain technology through our
+              comprehensive 8-week program. From basic concepts to advanced
+              smart contract development, build the skills needed for a Web3
+              career.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-brand-purple hover:bg-white/90">
+              <Button
+                size="lg"
+                className="bg-white text-brand-purple hover:bg-white/90"
+              >
                 Enroll Now - Free
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10"
+              >
                 View Curriculum
               </Button>
             </div>
@@ -109,12 +155,14 @@ export default function BlockchainEducation() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Our <span className="text-brand-purple">Blockchain Education</span>?
+                Why Choose Our{" "}
+                <span className="text-brand-purple">Blockchain Education</span>?
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our blockchain education program is specifically designed for beginners from underrepresented 
-                regions. We provide comprehensive training that bridges the knowledge gap and prepares you 
-                for sustainable careers in the Web3 ecosystem.
+                Our blockchain education program is specifically designed for
+                beginners from underrepresented regions. We provide
+                comprehensive training that bridges the knowledge gap and
+                prepares you for sustainable careers in the Web3 ecosystem.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -137,10 +185,15 @@ export default function BlockchainEducation() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+                <Card
+                  key={index}
+                  className="p-6 hover:shadow-lg transition-shadow"
+                >
                   <benefit.icon className="h-8 w-8 text-brand-purple mb-4" />
                   <h3 className="font-semibold mb-2">{benefit.title}</h3>
-                  <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {benefit.description}
+                  </p>
                 </Card>
               ))}
             </div>
@@ -156,7 +209,8 @@ export default function BlockchainEducation() {
               Program <span className="text-brand-purple">Curriculum</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our 8-week structured curriculum takes you from blockchain basics to advanced smart contract development
+              Our 8-week structured curriculum takes you from blockchain basics
+              to advanced smart contract development
             </p>
           </div>
 
@@ -165,7 +219,10 @@ export default function BlockchainEducation() {
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <Badge variant="outline" className="text-brand-purple border-brand-purple">
+                    <Badge
+                      variant="outline"
+                      className="text-brand-purple border-brand-purple"
+                    >
                       {module.week}
                     </Badge>
                     <Clock className="h-4 w-4 text-muted-foreground" />
@@ -175,7 +232,10 @@ export default function BlockchainEducation() {
                 <CardContent>
                   <ul className="space-y-2">
                     {module.topics.map((topic, topicIndex) => (
-                      <li key={topicIndex} className="flex items-center space-x-2">
+                      <li
+                        key={topicIndex}
+                        className="flex items-center space-x-2"
+                      >
                         <CheckCircle className="h-4 w-4 text-brand-green flex-shrink-0" />
                         <span className="text-sm">{topic}</span>
                       </li>
@@ -193,7 +253,9 @@ export default function BlockchainEducation() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-brand-purple mb-2">500+</div>
+              <div className="text-3xl font-bold text-brand-purple mb-2">
+                500+
+              </div>
               <p className="text-muted-foreground">Graduates</p>
             </div>
             <div>
@@ -201,11 +263,15 @@ export default function BlockchainEducation() {
               <p className="text-muted-foreground">Weeks Duration</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-brand-purple mb-2">95%</div>
+              <div className="text-3xl font-bold text-brand-purple mb-2">
+                95%
+              </div>
               <p className="text-muted-foreground">Completion Rate</p>
             </div>
             <div>
-              <div className="text-3xl font-bold text-brand-purple mb-2">Free</div>
+              <div className="text-3xl font-bold text-brand-purple mb-2">
+                Free
+              </div>
               <p className="text-muted-foreground">Program Cost</p>
             </div>
           </div>
@@ -220,14 +286,22 @@ export default function BlockchainEducation() {
               Ready to Start Your Blockchain Journey?
             </h2>
             <p className="text-lg mb-8 opacity-90">
-              Join hundreds of others who have launched successful Web3 careers through our program.
+              Join hundreds of others who have launched successful Web3 careers
+              through our program.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-brand-purple hover:bg-white/90">
+              <Button
+                size="lg"
+                className="bg-white text-brand-purple hover:bg-white/90"
+              >
                 <Calendar className="mr-2 h-4 w-4" />
                 Apply Now - Next Cohort
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10"
+              >
                 Download Syllabus
               </Button>
             </div>

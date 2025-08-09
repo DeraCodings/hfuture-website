@@ -1,18 +1,53 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, Code, Terminal, Rocket, Globe, Target, CheckCircle, Zap, Github, Layers } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  ArrowLeft,
+  Code,
+  Terminal,
+  Rocket,
+  Globe,
+  Target,
+  CheckCircle,
+  Zap,
+  Github,
+  Layers,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export default function Web3Development() {
   const techStack = [
-    { name: "Solidity", description: "Smart contract development language", level: "Core" },
-    { name: "React", description: "Frontend development framework", level: "Core" },
-    { name: "Web3.js/Ethers.js", description: "Blockchain interaction libraries", level: "Core" },
-    { name: "Hardhat", description: "Ethereum development environment", level: "Tools" },
-    { name: "IPFS", description: "Decentralized storage solution", level: "Storage" },
-    { name: "MetaMask", description: "Wallet integration", level: "Integration" }
+    {
+      name: "Solidity",
+      description: "Smart contract development language",
+      level: "Core",
+    },
+    {
+      name: "React",
+      description: "Frontend development framework",
+      level: "Core",
+    },
+    {
+      name: "Web3.js/Ethers.js",
+      description: "Blockchain interaction libraries",
+      level: "Core",
+    },
+    {
+      name: "Hardhat",
+      description: "Ethereum development environment",
+      level: "Tools",
+    },
+    {
+      name: "IPFS",
+      description: "Decentralized storage solution",
+      level: "Storage",
+    },
+    {
+      name: "MetaMask",
+      description: "Wallet integration",
+      level: "Integration",
+    },
   ];
 
   const projects = [
@@ -20,49 +55,50 @@ export default function Web3Development() {
       title: "DeFi Token Exchange",
       description: "Build a decentralized exchange with AMM functionality",
       tech: ["Solidity", "React", "Web3.js"],
-      difficulty: "Advanced"
+      difficulty: "Advanced",
     },
     {
-      title: "NFT Marketplace", 
+      title: "NFT Marketplace",
       description: "Create a full-featured NFT trading platform",
       tech: ["Solidity", "IPFS", "React"],
-      difficulty: "Intermediate"
+      difficulty: "Intermediate",
     },
     {
       title: "DAO Governance",
       description: "Implement decentralized governance mechanisms",
       tech: ["Solidity", "Hardhat", "React"],
-      difficulty: "Advanced"
+      difficulty: "Advanced",
     },
     {
       title: "Web3 Social Platform",
       description: "Decentralized social media with token rewards",
       tech: ["Solidity", "React", "IPFS"],
-      difficulty: "Expert"
-    }
+      difficulty: "Expert",
+    },
   ];
 
   const learningPath = [
     {
       phase: "Foundation",
       duration: "Weeks 1-3",
-      focus: "Blockchain basics, Solidity fundamentals, development environment setup"
+      focus:
+        "Blockchain basics, Solidity fundamentals, development environment setup",
     },
     {
       phase: "Development",
-      duration: "Weeks 4-7", 
-      focus: "Smart contract development, testing, security best practices"
+      duration: "Weeks 4-7",
+      focus: "Smart contract development, testing, security best practices",
     },
     {
       phase: "Integration",
       duration: "Weeks 8-10",
-      focus: "Frontend integration, Web3 libraries, wallet connections"
+      focus: "Frontend integration, Web3 libraries, wallet connections",
     },
     {
       phase: "Deployment",
       duration: "Weeks 11-12",
-      focus: "Mainnet deployment, optimization, production considerations"
-    }
+      focus: "Mainnet deployment, optimization, production considerations",
+    },
   ];
 
   return (
@@ -75,7 +111,10 @@ export default function Web3Development() {
               <div className="h-8 w-8 rounded-lg bg-brand-gradient flex items-center justify-center">
                 <Zap className="h-5 w-5 text-white" />
               </div>
-              <Link to="/" className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
+              <Link
+                to="/"
+                className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent"
+              >
                 HFUTURETECH
               </Link>
             </div>
@@ -101,15 +140,23 @@ export default function Web3Development() {
               Web3 Development Bootcamp
             </h1>
             <p className="text-xl mb-8 opacity-90 leading-relaxed max-w-3xl mx-auto">
-              Master full-stack Web3 development through intensive hands-on training. Build production-ready 
-              decentralized applications and smart contracts that solve real-world problems.
+              Master full-stack Web3 development through intensive hands-on
+              training. Build production-ready decentralized applications and
+              smart contracts that solve real-world problems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-brand-purple hover:bg-white/90">
+              <Button
+                size="lg"
+                className="bg-white text-brand-purple hover:bg-white/90"
+              >
                 <Rocket className="mr-2 h-4 w-4" />
                 Start Building
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10"
+              >
                 View Projects
               </Button>
             </div>
@@ -123,12 +170,14 @@ export default function Web3Development() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Build the <span className="text-brand-purple">Future of Web</span>
+                Build the{" "}
+                <span className="text-brand-purple">Future of Web</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our intensive 12-week Web3 development program transforms beginners into skilled blockchain 
-                developers. Through project-based learning and expert mentorship, you'll master the complete 
-                Web3 development stack.
+                Our intensive 12-week Web3 development program transforms
+                beginners into skilled blockchain developers. Through
+                project-based learning and expert mentorship, you'll master the
+                complete Web3 development stack.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -156,7 +205,8 @@ export default function Web3Development() {
                   <h3 className="font-semibold">Hands-on Learning</h3>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Learn by building real dApps from day one. No theoretical fluff, just practical coding experience.
+                  Learn by building real dApps from day one. No theoretical
+                  fluff, just practical coding experience.
                 </p>
               </Card>
               <Card className="p-6 border-l-4 border-l-brand-green">
@@ -165,7 +215,8 @@ export default function Web3Development() {
                   <h3 className="font-semibold">Industry Mentors</h3>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Get guidance from working professionals at top Web3 companies and DeFi protocols.
+                  Get guidance from working professionals at top Web3 companies
+                  and DeFi protocols.
                 </p>
               </Card>
               <Card className="p-6 border-l-4 border-l-brand-blue">
@@ -174,7 +225,8 @@ export default function Web3Development() {
                   <h3 className="font-semibold">Career Support</h3>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Portfolio development, interview prep, and direct connections to hiring partners.
+                  Portfolio development, interview prep, and direct connections
+                  to hiring partners.
                 </p>
               </Card>
             </div>
@@ -187,10 +239,12 @@ export default function Web3Development() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Master the <span className="text-brand-purple">Web3 Tech Stack</span>
+              Master the{" "}
+              <span className="text-brand-purple">Web3 Tech Stack</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Learn industry-standard tools and frameworks used by top Web3 companies
+              Learn industry-standard tools and frameworks used by top Web3
+              companies
             </p>
           </div>
 
@@ -200,18 +254,26 @@ export default function Web3Development() {
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-lg">{tech.name}</CardTitle>
-                    <Badge variant="outline" className={
-                      tech.level === 'Core' ? 'border-brand-purple text-brand-purple' :
-                      tech.level === 'Tools' ? 'border-brand-green text-brand-green' :
-                      tech.level === 'Storage' ? 'border-brand-blue text-brand-blue' :
-                      'border-muted-foreground text-muted-foreground'
-                    }>
+                    <Badge
+                      variant="outline"
+                      className={
+                        tech.level === "Core"
+                          ? "border-brand-purple text-brand-purple"
+                          : tech.level === "Tools"
+                            ? "border-brand-green text-brand-green"
+                            : tech.level === "Storage"
+                              ? "border-brand-blue text-brand-blue"
+                              : "border-muted-foreground text-muted-foreground"
+                      }
+                    >
                       {tech.level}
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">{tech.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {tech.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -227,13 +289,17 @@ export default function Web3Development() {
               Your <span className="text-brand-green">Learning Journey</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Structured 12-week program designed to take you from beginner to job-ready developer
+              Structured 12-week program designed to take you from beginner to
+              job-ready developer
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {learningPath.map((phase, index) => (
-              <Card key={index} className="relative hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="relative hover:shadow-lg transition-shadow"
+              >
                 <CardHeader>
                   <div className="flex items-center space-x-2 mb-2">
                     <div className="w-8 h-8 rounded-full bg-brand-gradient text-white flex items-center justify-center text-sm font-bold">
@@ -260,10 +326,12 @@ export default function Web3Development() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Build Your <span className="text-brand-purple">Project Portfolio</span>
+              Build Your{" "}
+              <span className="text-brand-purple">Project Portfolio</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Create impressive dApps that showcase your skills to potential employers
+              Create impressive dApps that showcase your skills to potential
+              employers
             </p>
           </div>
 
@@ -273,11 +341,15 @@ export default function Web3Development() {
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-xl">{project.title}</CardTitle>
-                    <Badge variant={
-                      project.difficulty === 'Advanced' ? 'destructive' :
-                      project.difficulty === 'Expert' ? 'default' :
-                      'secondary'
-                    }>
+                    <Badge
+                      variant={
+                        project.difficulty === "Advanced"
+                          ? "destructive"
+                          : project.difficulty === "Expert"
+                            ? "default"
+                            : "secondary"
+                      }
+                    >
                       {project.difficulty}
                     </Badge>
                   </div>
@@ -286,7 +358,11 @@ export default function Web3Development() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
+                      <Badge
+                        key={techIndex}
+                        variant="outline"
+                        className="text-xs"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -306,14 +382,22 @@ export default function Web3Development() {
               Launch Your Web3 Development Career
             </h2>
             <p className="text-lg mb-8 opacity-90">
-              Join the next generation of blockchain developers building the decentralized future.
+              Join the next generation of blockchain developers building the
+              decentralized future.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-brand-purple hover:bg-white/90">
+              <Button
+                size="lg"
+                className="bg-white text-brand-purple hover:bg-white/90"
+              >
                 <Github className="mr-2 h-4 w-4" />
                 Apply Now
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10"
+              >
                 <Layers className="mr-2 h-4 w-4" />
                 View Alumni Projects
               </Button>

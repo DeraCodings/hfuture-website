@@ -24,9 +24,18 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/programs/blockchain-education" element={<BlockchainEducation />} />
-          <Route path="/programs/web3-development" element={<Web3Development />} />
-          <Route path="/programs/community-building" element={<CommunityBuilding />} />
+          <Route
+            path="/programs/blockchain-education"
+            element={<BlockchainEducation />}
+          />
+          <Route
+            path="/programs/web3-development"
+            element={<Web3Development />}
+          />
+          <Route
+            path="/programs/community-building"
+            element={<CommunityBuilding />}
+          />
           <Route path="/programs/irl-meetups" element={<IRLMeetups />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

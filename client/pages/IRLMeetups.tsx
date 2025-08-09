@@ -1,9 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, Calendar, Users, Coffee, Handshake, CheckCircle, Zap, Camera, Clock } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  ArrowLeft,
+  MapPin,
+  Calendar,
+  Users,
+  Coffee,
+  Handshake,
+  CheckCircle,
+  Zap,
+  Camera,
+  Clock,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export default function IRLMeetups() {
   const upcomingEvents = [
@@ -15,28 +26,28 @@ export default function IRLMeetups() {
       attendees: 85,
       maxAttendees: 100,
       type: "Workshop",
-      status: "Open"
+      status: "Open",
     },
     {
       title: "Abuja Blockchain Networking",
-      date: "March 22, 2024", 
+      date: "March 22, 2024",
       time: "6:00 PM - 9:00 PM",
       location: "Abuja Innovation Center",
       attendees: 45,
       maxAttendees: 60,
       type: "Networking",
-      status: "Open"
+      status: "Open",
     },
     {
       title: "Port Harcourt DeFi Meetup",
       date: "March 29, 2024",
-      time: "2:00 PM - 6:00 PM", 
+      time: "2:00 PM - 6:00 PM",
       location: "PH Tech Park",
       attendees: 32,
       maxAttendees: 50,
       type: "Meetup",
-      status: "Open"
-    }
+      status: "Open",
+    },
   ];
 
   const pastEvents = [
@@ -45,49 +56,64 @@ export default function IRLMeetups() {
       date: "February 10, 2024",
       attendees: 120,
       photos: 45,
-      highlights: ["50+ smart contracts deployed", "3 winning projects", "Industry expert speakers"]
+      highlights: [
+        "50+ smart contracts deployed",
+        "3 winning projects",
+        "Industry expert speakers",
+      ],
     },
     {
       title: "Women in Web3 Conference",
       date: "January 20, 2024",
       attendees: 200,
       photos: 78,
-      highlights: ["40% female attendance", "12 female speakers", "Mentorship program launch"]
+      highlights: [
+        "40% female attendance",
+        "12 female speakers",
+        "Mentorship program launch",
+      ],
     },
     {
       title: "DeFi Developer Hackathon",
       date: "December 15, 2023",
       attendees: 80,
       photos: 32,
-      highlights: ["48-hour coding challenge", "$5000 in prizes", "3 startup ideas born"]
-    }
+      highlights: [
+        "48-hour coding challenge",
+        "$5000 in prizes",
+        "3 startup ideas born",
+      ],
+    },
   ];
 
   const eventTypes = [
     {
       icon: Coffee,
       title: "Casual Meetups",
-      description: "Informal networking sessions to connect and share experiences",
-      frequency: "Bi-weekly"
+      description:
+        "Informal networking sessions to connect and share experiences",
+      frequency: "Bi-weekly",
     },
     {
       icon: Users,
       title: "Technical Workshops",
       description: "Hands-on coding sessions and skill development workshops",
-      frequency: "Monthly"
+      frequency: "Monthly",
     },
     {
       icon: Handshake,
       title: "Networking Events",
-      description: "Professional networking with industry leaders and investors",
-      frequency: "Monthly"
+      description:
+        "Professional networking with industry leaders and investors",
+      frequency: "Monthly",
     },
     {
       icon: Camera,
       title: "Conference & Summits",
-      description: "Large-scale events with keynote speakers and panel discussions",
-      frequency: "Quarterly"
-    }
+      description:
+        "Large-scale events with keynote speakers and panel discussions",
+      frequency: "Quarterly",
+    },
   ];
 
   const cities = [
@@ -96,7 +122,7 @@ export default function IRLMeetups() {
     { name: "Port Harcourt", events: 12, members: 180 },
     { name: "Kano", events: 8, members: 120 },
     { name: "Ibadan", events: 10, members: 150 },
-    { name: "Enugu", events: 6, members: 90 }
+    { name: "Enugu", events: 6, members: 90 },
   ];
 
   return (
@@ -109,7 +135,10 @@ export default function IRLMeetups() {
               <div className="h-8 w-8 rounded-lg bg-brand-gradient flex items-center justify-center">
                 <Zap className="h-5 w-5 text-white" />
               </div>
-              <Link to="/" className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
+              <Link
+                to="/"
+                className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent"
+              >
                 HFUTURETECH
               </Link>
             </div>
@@ -135,15 +164,23 @@ export default function IRLMeetups() {
               IRL Meetups & Events
             </h1>
             <p className="text-xl mb-8 opacity-90 leading-relaxed max-w-3xl mx-auto">
-              Connect face-to-face with Nigeria's Web3 community. Join workshops, networking 
-              events, and conferences that bring blockchain enthusiasts together in real life.
+              Connect face-to-face with Nigeria's Web3 community. Join
+              workshops, networking events, and conferences that bring
+              blockchain enthusiasts together in real life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-brand-purple hover:bg-white/90">
+              <Button
+                size="lg"
+                className="bg-white text-brand-purple hover:bg-white/90"
+              >
                 <Calendar className="mr-2 h-4 w-4" />
                 Find Events Near You
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10"
+              >
                 Host an Event
               </Button>
             </div>
@@ -168,14 +205,21 @@ export default function IRLMeetups() {
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
-                    <Badge variant={
-                      event.type === 'Workshop' ? 'default' :
-                      event.type === 'Networking' ? 'secondary' :
-                      'outline'
-                    }>
+                    <Badge
+                      variant={
+                        event.type === "Workshop"
+                          ? "default"
+                          : event.type === "Networking"
+                            ? "secondary"
+                            : "outline"
+                      }
+                    >
                       {event.type}
                     </Badge>
-                    <Badge variant="outline" className="text-brand-green border-brand-green">
+                    <Badge
+                      variant="outline"
+                      className="text-brand-green border-brand-green"
+                    >
                       {event.status}
                     </Badge>
                   </div>
@@ -196,16 +240,20 @@ export default function IRLMeetups() {
                       <span>{event.location}</span>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
                       <span>Attendees</span>
-                      <span className="font-medium">{event.attendees}/{event.maxAttendees}</span>
+                      <span className="font-medium">
+                        {event.attendees}/{event.maxAttendees}
+                      </span>
                     </div>
                     <div className="w-full bg-muted rounded-full h-2">
-                      <div 
-                        className="bg-brand-gradient h-2 rounded-full" 
-                        style={{ width: `${(event.attendees / event.maxAttendees) * 100}%` }}
+                      <div
+                        className="bg-brand-gradient h-2 rounded-full"
+                        style={{
+                          width: `${(event.attendees / event.maxAttendees) * 100}%`,
+                        }}
                       ></div>
                     </div>
                   </div>
@@ -228,19 +276,25 @@ export default function IRLMeetups() {
               Types of <span className="text-brand-green">Events</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We host various types of events to cater to different learning styles and networking preferences
+              We host various types of events to cater to different learning
+              styles and networking preferences
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {eventTypes.map((type, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="text-center hover:shadow-lg transition-shadow"
+              >
                 <CardHeader>
                   <div className="p-3 rounded-full bg-brand-gradient w-fit mx-auto mb-4">
                     <type.icon className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-lg">{type.title}</CardTitle>
-                  <p className="text-sm text-muted-foreground">{type.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {type.description}
+                  </p>
                 </CardHeader>
                 <CardContent>
                   <Badge variant="outline">{type.frequency}</Badge>
@@ -273,20 +327,31 @@ export default function IRLMeetups() {
                 <CardContent className="space-y-4">
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-brand-purple">{event.attendees}</div>
-                      <div className="text-xs text-muted-foreground">Attendees</div>
+                      <div className="text-2xl font-bold text-brand-purple">
+                        {event.attendees}
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        Attendees
+                      </div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-brand-green">{event.photos}</div>
-                      <div className="text-xs text-muted-foreground">Photos</div>
+                      <div className="text-2xl font-bold text-brand-green">
+                        {event.photos}
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        Photos
+                      </div>
                     </div>
                   </div>
-                  
+
                   <div>
                     <h4 className="font-semibold mb-2">Event Highlights:</h4>
                     <ul className="space-y-1">
                       {event.highlights.map((highlight, highlightIndex) => (
-                        <li key={highlightIndex} className="flex items-center space-x-2 text-sm">
+                        <li
+                          key={highlightIndex}
+                          className="flex items-center space-x-2 text-sm"
+                        >
                           <CheckCircle className="h-3 w-3 text-brand-green flex-shrink-0" />
                           <span>{highlight}</span>
                         </li>
@@ -294,7 +359,10 @@ export default function IRLMeetups() {
                     </ul>
                   </div>
 
-                  <Button variant="outline" className="w-full border-brand-purple text-brand-purple hover:bg-brand-purple/5">
+                  <Button
+                    variant="outline"
+                    className="w-full border-brand-purple text-brand-purple hover:bg-brand-purple/5"
+                  >
                     <Camera className="mr-2 h-4 w-4" />
                     View Photos
                   </Button>
@@ -313,13 +381,17 @@ export default function IRLMeetups() {
               We're in Your <span className="text-brand-green">City</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              HFUTURETECH events are happening across Nigeria. Find or start a chapter in your city.
+              HFUTURETECH events are happening across Nigeria. Find or start a
+              chapter in your city.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cities.map((city, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="text-center hover:shadow-lg transition-shadow"
+              >
                 <CardHeader>
                   <div className="p-3 rounded-full bg-brand-green/10 w-fit mx-auto mb-4">
                     <MapPin className="h-8 w-8 text-brand-green" />
@@ -329,15 +401,26 @@ export default function IRLMeetups() {
                 <CardContent className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <div className="text-2xl font-bold text-brand-purple">{city.events}</div>
-                      <div className="text-sm text-muted-foreground">Events Hosted</div>
+                      <div className="text-2xl font-bold text-brand-purple">
+                        {city.events}
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        Events Hosted
+                      </div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-brand-green">{city.members}</div>
-                      <div className="text-sm text-muted-foreground">Members</div>
+                      <div className="text-2xl font-bold text-brand-green">
+                        {city.members}
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        Members
+                      </div>
                     </div>
                   </div>
-                  <Button variant="outline" className="w-full border-brand-green text-brand-green hover:bg-brand-green/5">
+                  <Button
+                    variant="outline"
+                    className="w-full border-brand-green text-brand-green hover:bg-brand-green/5"
+                  >
                     Join {city.name} Chapter
                   </Button>
                 </CardContent>
@@ -355,15 +438,23 @@ export default function IRLMeetups() {
               Want to Host an Event?
             </h2>
             <p className="text-lg mb-8 opacity-90">
-              Bring the HFUTURETECH community to your city. We provide support, resources, 
-              and guidance to help you organize successful Web3 events.
+              Bring the HFUTURETECH community to your city. We provide support,
+              resources, and guidance to help you organize successful Web3
+              events.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-brand-purple hover:bg-white/90">
+              <Button
+                size="lg"
+                className="bg-white text-brand-purple hover:bg-white/90"
+              >
                 <Users className="mr-2 h-4 w-4" />
                 Become Event Host
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/10"
+              >
                 <MapPin className="mr-2 h-4 w-4" />
                 Start New Chapter
               </Button>
