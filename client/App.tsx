@@ -9,6 +9,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import BlockchainEducation from "./pages/BlockchainEducation";
+import Web3Development from "./pages/Web3Development";
+import CommunityBuilding from "./pages/CommunityBuilding";
+import IRLMeetups from "./pages/IRLMeetups";
 
 const queryClient = new QueryClient();
 
