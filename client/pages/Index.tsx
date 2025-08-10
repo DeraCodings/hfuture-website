@@ -507,7 +507,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>© 2024 HFUTURETECH. Building the future of Web3 in Africa.</p>
+            <p>© 2025 HFUTURETECH. Building the future of Web3 in Africa.</p>
           </div>
         </div>
       </footer>
