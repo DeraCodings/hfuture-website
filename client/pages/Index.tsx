@@ -141,19 +141,19 @@ export default function Index() {
 
   const partners = [
     {
-      name: "Ethereum Foundation",
-      logo: "https://ethereum.org/static/655aaefb744ae2f9f818095c41a0580b/f3a29/ethereum-logo-portrait-black.png",
-      type: "Blockchain Network"
+      name: "Unizik Blockchain Lab",
+      logo: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754945210/UBL_LOGO_3_avk45u.png",
+      type: "Web3 and Blockchain community"
     },
     {
-      name: "Polygon",
-      logo: "https://polygon.technology/favicon-32x32.png",
-      type: "Layer 2 Solution"
+      name: "Greenpill Nigeria",
+      logo: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754945209/GP9ja_Logo_qbn1d8.png",
+      type: "Public goods platform"
     },
     {
-      name: "Chainlink",
-      logo: "https://chainlinklabs.com/favicon-32x32.png",
-      type: "Oracle Network"
+      name: "FiTech",
+      logo: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754945433/FiTech_logo_ckco2x.png",
+      type: "Web3 community"
     },
     {
       name: "Solana Foundation",
