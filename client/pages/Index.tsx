@@ -250,9 +250,9 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => {
               const backgroundImages = [
-                "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop&crop=center"
+                "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754943571/20250811_205737_j1m9cz.jpg",
+                "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754943570/20250811_204802_s5jd06.jpg",
+                "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754943570/20250811_204554_tgzhvv.jpg",
               ];
 
               return (
