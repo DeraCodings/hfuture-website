@@ -256,28 +256,24 @@ export default function Index() {
               ];
 
               return (
-                <Card key={index} className="group relative text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-                  {/* Background Image with Hover Scaling */}
-                  <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-110">
+                <Card key={index} className="group text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  {/* Image Section - Takes 2/3 of card height */}
+                  <div className="relative h-48 overflow-hidden">
                     <img
                       src={backgroundImages[index]}
                       alt={`${achievement.label} background`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-white/85 group-hover:bg-white/75 transition-colors duration-300"></div>
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
                   </div>
 
-                  <CardContent className="relative z-10 p-8">
-                    <div className="mb-6">
-                      <div className="w-16 h-16 mx-auto bg-brand-gradient rounded-full flex items-center justify-center mb-4 shadow-lg">
-                        <achievement.icon className="h-8 w-8 text-white" />
-                      </div>
-                      <div className="text-3xl md:text-4xl font-bold text-brand-purple mb-2">
-                        {achievement.number}
-                      </div>
-                      <h3 className="text-xl font-semibold mb-3">{achievement.label}</h3>
-                      <p className="text-muted-foreground">{achievement.description}</p>
+                  {/* Text Section - Takes 1/3 of card height */}
+                  <CardContent className="p-6">
+                    <div className="text-2xl md:text-3xl font-bold text-brand-purple mb-2">
+                      {achievement.number}
                     </div>
+                    <h3 className="text-lg font-semibold mb-2">{achievement.label}</h3>
+                    <p className="text-sm text-muted-foreground">{achievement.description}</p>
                   </CardContent>
                 </Card>
               );
