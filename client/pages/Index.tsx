@@ -237,8 +237,18 @@ export default function Index() {
       </section>
 
       {/* Achievements Section */}
-      <section id="achievements" className="py-16 lg:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="achievements" className="relative py-16 lg:py-24 overflow-hidden group">
+        {/* Background Image with Hover Scaling */}
+        <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
+          <img
+            src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1920&h=1080&fit=crop&crop=center"
+            alt="Blockchain technology background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/90"></div>
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our <span className="text-brand-purple">Achievements</span>
