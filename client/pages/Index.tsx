@@ -248,22 +248,40 @@ export default function Index() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {achievements.map((achievement, index) => (
-              <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <div className="w-16 h-16 mx-auto bg-brand-gradient rounded-full flex items-center justify-center mb-4">
-                      <achievement.icon className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="text-3xl md:text-4xl font-bold text-brand-purple mb-2">
-                      {achievement.number}
-                    </div>
-                    <h3 className="text-xl font-semibold mb-3">{achievement.label}</h3>
-                    <p className="text-muted-foreground">{achievement.description}</p>
+            {achievements.map((achievement, index) => {
+              const backgroundImages = [
+                "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&crop=center",
+                "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop&crop=center",
+                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop&crop=center"
+              ];
+
+              return (
+                <Card key={index} className="group relative text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  {/* Background Image with Hover Scaling */}
+                  <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-110">
+                    <img
+                      src={backgroundImages[index]}
+                      alt={`${achievement.label} background`}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-white/85 group-hover:bg-white/75 transition-colors duration-300"></div>
                   </div>
-                </CardContent>
-              </Card>
-            ))}
+
+                  <CardContent className="relative z-10 p-8">
+                    <div className="mb-6">
+                      <div className="w-16 h-16 mx-auto bg-brand-gradient rounded-full flex items-center justify-center mb-4 shadow-lg">
+                        <achievement.icon className="h-8 w-8 text-white" />
+                      </div>
+                      <div className="text-3xl md:text-4xl font-bold text-brand-purple mb-2">
+                        {achievement.number}
+                      </div>
+                      <h3 className="text-xl font-semibold mb-3">{achievement.label}</h3>
+                      <p className="text-muted-foreground">{achievement.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
