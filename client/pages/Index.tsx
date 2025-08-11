@@ -155,21 +155,6 @@ export default function Index() {
       logo: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754945433/FiTech_logo_ckco2x.png",
       type: "Web3 community"
     },
-    {
-      name: "Solana Foundation",
-      logo: "https://solana.com/favicon-32x32.png",
-      type: "Blockchain Platform"
-    },
-    {
-      name: "Binance Smart Chain",
-      logo: "https://www.bnbchain.org/static/favicon-16x16.png",
-      type: "Blockchain Network"
-    },
-    {
-      name: "Avalanche",
-      logo: "https://www.avax.network/favicon-32x32.png",
-      type: "Blockchain Platform"
-    }
   ];
 
   return (
