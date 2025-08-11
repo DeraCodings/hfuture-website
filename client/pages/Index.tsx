@@ -165,10 +165,10 @@ export default function Index() {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center space-x-2">
               <div className="h-8 w-8 rounded-lg bg-brand-gradient flex items-center justify-center">
-                <Zap className="h-5 w-5 text-white" />
+                <img src="https://res.cloudinary.com/dwzebmtzq/image/upload/v1754946856/IMG-20250811-WA0047_er1mkk.jpg" className="" />
               </div>
               <span className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
-                HFUTURETECH
+                HFUTUREHUB
               </span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
