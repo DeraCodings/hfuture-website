@@ -363,6 +363,7 @@ export default function Index() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
             {partners.map((partner, index) => (
               <div key={index} className="group flex justify-center items-center">
+                <div>
                 <Card className="p-3 w-32 h-32 flex items-center justify-center hover:shadow-lg transition-shadow border-2 hover:border-brand-green/20">
                   <img
                     src={partner.logo}
@@ -377,6 +378,7 @@ export default function Index() {
                 <p className="text-xs text-center mt-2 text-muted-foreground group-hover:text-brand-green transition-colors">
                   {partner.name}
                 </p>
+                </div>
               </div>
             ))}
           </div>
