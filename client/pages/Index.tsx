@@ -155,6 +155,11 @@ export default function Index() {
       logo: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754945433/FiTech_logo_ckco2x.png",
       type: "Web3 community"
     },
+    {
+      name: "NaWe School",
+      logo: "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754946856/IMG-20250811-WA0046_mij03h.jpg",
+      type: "Coding School"
+    }
   ];
 
   return (
