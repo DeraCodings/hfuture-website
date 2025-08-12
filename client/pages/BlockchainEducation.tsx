@@ -89,26 +89,41 @@ export default function BlockchainEducation() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
+
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-brand-gradient flex items-center justify-center">
-                <Zap className="h-5 w-5 text-white" />
+              <div className="h-8 w-8 rounded-lg flex items-center justify-center">
+                <img src="https://res.cloudinary.com/dwzebmtzq/image/upload/v1754947289/IMG-20250811-WA0047-removebg-preview_chrb8l.png" />
               </div>
-              <Link
-                to="/"
-                className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent"
-              >
-                HFUTURETECH
-              </Link>
+              <span className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
+                HFUTUREHUB
+              </span>
             </div>
-            <Link to="/">
-              <Button variant="ghost" size="sm">
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Home
+            <nav className="hidden md:flex items-center space-x-8">
+              <a
+                href="#mission"
+                className="text-sm font-medium hover:text-brand-purple transition-colors"
+              >
+                Mission
+              </a>
+              <a
+                href="#achievements"
+                className="text-sm font-medium hover:text-brand-purple transition-colors"
+              >
+                Achievements
+              </a>
+              <a
+                href="#impact"
+                className="text-sm font-medium hover:text-brand-purple transition-colors"
+              >
+                Impact
+              </a>
+              <Button className="bg-brand-gradient hover:opacity-90 text-white">
+                Support Us
               </Button>
-            </Link>
+            </nav>
           </div>
         </div>
       </header>
