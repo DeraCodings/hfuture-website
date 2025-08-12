@@ -35,7 +35,7 @@ export default function Index() {
       setCurrentImageIndex((prevIndex) =>
         (prevIndex + 1) % heroBackgroundImages.length
       );
-    }, 5000); // Change image every 5 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, [heroBackgroundImages.length]);
@@ -258,7 +258,7 @@ export default function Index() {
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentImageIndex ? 'opacity-20' : 'opacity-0'
+                index === currentImageIndex ? 'opacity-80' : 'opacity-0'
               }`}
             >
               <img
