@@ -193,7 +193,7 @@ export default function Index() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-brand-gradient flex items-center justify-center">
+              <div className="h-8 w-8 rounded-lg flex items-center justify-center">
                 <img src="https://res.cloudinary.com/dwzebmtzq/image/upload/v1754947289/IMG-20250811-WA0047-removebg-preview_chrb8l.png" />
               </div>
               <span className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
