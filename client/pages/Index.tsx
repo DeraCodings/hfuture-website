@@ -252,7 +252,24 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-brand-gradient opacity-5"></div>
+        {/* Rotating Background Images */}
+        <div className="absolute inset-0">
+          {heroBackgroundImages.map((image, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === currentImageIndex ? 'opacity-20' : 'opacity-0'
+              }`}
+            >
+              <img
+                src={image}
+                alt={`Hero background ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+          <div className="absolute inset-0 bg-brand-gradient opacity-10"></div>
+        </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-6 bg-brand-green-light text-brand-green border-brand-green/20">
