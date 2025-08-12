@@ -112,7 +112,7 @@ export default function Web3Development() {
               <div className="h-8 w-8 rounded-lg flex items-center justify-center">
                 <img src="https://res.cloudinary.com/dwzebmtzq/image/upload/v1754947289/IMG-20250811-WA0047-removebg-preview_chrb8l.png" />
               </div>
-              <Link href="/">
+              <Link to="/">
               <span className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
                 HFUTUREHUB
               </span>
