@@ -110,6 +110,13 @@ export default function CommunityBuilding() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Community Building Program - Web3 Networking & Support"
+        description="Join our thriving Web3 community with 1000+ members across Nigeria. Connect through Discord, mentorship programs, regional chapters, and ambassador initiatives. Build lasting networks in the blockchain ecosystem."
+        keywords="Web3 community Nigeria, blockchain networking, cryptocurrency community, Web3 mentorship, blockchain ambassador program, tech community building Nigeria"
+        url="https://hfuturehub.com/programs/community-building"
+        image="https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030535/stella-55_ijhhqs.jpg"
+      />
       {/* Header */}
 
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
