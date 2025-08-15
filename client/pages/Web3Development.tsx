@@ -104,6 +104,13 @@ export default function Web3Development() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Web3 Development Bootcamp - 12-Week Intensive Program"
+        description="Master full-stack Web3 development through intensive 12-week training. Build production-ready dApps, smart contracts, and DeFi protocols. Learn Solidity, React, Web3.js, and more with job placement assistance."
+        keywords="Web3 development bootcamp, dApp development course, smart contract programming, full stack blockchain development, Solidity training, DeFi development, NFT marketplace development"
+        url="https://hfuturehub.com/programs/web3-development"
+        image="https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030534/stella-27_gw4eiq.jpg"
+      />
       {/* Header */}
       
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
