@@ -89,6 +89,13 @@ export default function BlockchainEducation() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Blockchain Education Program - Free 8-Week Course"
+        description="Master blockchain fundamentals through our comprehensive 8-week program. Learn smart contracts, DeFi, NFTs, and Web3 development. 100% free with industry-recognized certification. 500+ graduates and 95% completion rate."
+        keywords="blockchain education course, smart contract training, solidity programming, cryptocurrency course Nigeria, DeFi education, blockchain certification, Web3 development course"
+        url="https://hfuturehub.com/programs/blockchain-education"
+        image="https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030251/1755027563788_zpnz3i.jpg"
+      />
       {/* Header */}
 
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
