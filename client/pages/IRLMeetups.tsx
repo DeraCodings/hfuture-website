@@ -128,6 +128,13 @@ export default function IRLMeetups() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="IRL Meetups & Events - Blockchain Community Gatherings"
+        description="Join Web3 meetups and events across Nigeria. Attend workshops, networking sessions, conferences and hackathons in Lagos, Abuja, Port Harcourt and more. Connect with Nigeria's growing blockchain community in person."
+        keywords="blockchain meetups Nigeria, Web3 events Lagos, cryptocurrency conferences Abuja, blockchain workshops Nigeria, tech meetups Africa, IRL blockchain events"
+        url="https://hfuturehub.com/programs/irl-meetups"
+        image="https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030530/stella-19_fwcz4q.jpg"
+      />
       {/* Header */}
 
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
