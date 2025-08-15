@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React from "react";
+import { Helmet } from "react-helmet-async";
 
 interface SEOProps {
   title: string;
@@ -10,16 +10,18 @@ interface SEOProps {
   type?: string;
 }
 
-export default function SEO({ 
-  title, 
-  description, 
+export default function SEO({
+  title,
+  description,
   keywords = "blockchain, web3, education, Nigeria, Africa, DeFi, smart contracts, cryptocurrency, training, HFUTUREHUB",
   image = "https://res.cloudinary.com/dwzebmtzq/image/upload/v1754947289/IMG-20250811-WA0047-removebg-preview_chrb8l.png",
   url = "https://hfuturehub.com",
-  type = "website"
+  type = "website",
 }: SEOProps) {
   const siteTitle = "HFUTUREHUB";
-  const fullTitle = title.includes(siteTitle) ? title : `${title} | ${siteTitle}`;
+  const fullTitle = title.includes(siteTitle)
+    ? title
+    : `${title} | ${siteTitle}`;
 
   return (
     <Helmet>
@@ -58,7 +60,7 @@ export default function SEO({
 
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
-      
+
       {/* Favicon */}
       <link rel="icon" type="image/png" href={image} />
       <link rel="apple-touch-icon" href={image} />

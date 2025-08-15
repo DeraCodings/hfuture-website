@@ -112,7 +112,7 @@ export default function Web3Development() {
         image="https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030534/stella-27_gw4eiq.jpg"
       />
       {/* Header */}
-      
+
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
@@ -121,9 +121,9 @@ export default function Web3Development() {
                 <img src="https://res.cloudinary.com/dwzebmtzq/image/upload/v1754947289/IMG-20250811-WA0047-removebg-preview_chrb8l.png" />
               </div>
               <Link to="/">
-              <span className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
-                HFUTUREHUB
-              </span>
+                <span className="text-xl font-bold bg-brand-gradient bg-clip-text text-transparent">
+                  HFUTUREHUB
+                </span>
               </Link>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
