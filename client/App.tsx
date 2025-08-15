@@ -1,6 +1,11 @@
 import React from "react";
 import "./global.css";
 
+// TypeScript declaration for global root variable
+declare global {
+  var __reactRoot: any;
+}
+
 import { Toaster } from "@/components/ui/toaster";
 import { createRoot } from "react-dom/client";
 import { Toaster as Sonner } from "@/components/ui/sonner";
