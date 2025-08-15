@@ -50,11 +50,13 @@ const App = () => (
 
 const container = document.getElementById("root")!;
 
-// Check if root already exists to prevent multiple createRoot calls
-if (!container._reactRootContainer) {
-  const root = createRoot(container);
-  container._reactRootContainer = root;
-  root.render(<App />);
+// Prevent multiple createRoot calls during development hot reloading
+let root: any;
+if (!globalThis.__reactRoot) {
+  root = createRoot(container);
+  globalThis.__reactRoot = root;
 } else {
-  container._reactRootContainer.render(<App />);
+  root = globalThis.__reactRoot;
 }
+
+root.render(<App />);
