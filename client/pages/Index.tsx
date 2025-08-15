@@ -211,6 +211,13 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Empowering Africa's Web3 Future - HFUTUREHUB"
+        description="HFUTUREHUB is a psycho-tech blockchain educational platform onboarding underrepresented communities in Nigeria into sustainable Web3 careers. Join 500+ graduates in blockchain education, Web3 development, and community building."
+        keywords="blockchain education Nigeria, Web3 training Africa, cryptocurrency courses, smart contract development, DeFi education, blockchain jobs Nigeria, Web3 careers Africa, HFUTUREHUB, blockchain community Nigeria"
+        url="https://hfuturehub.com"
+        image="https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030251/1755027563788_zpnz3i.jpg"
+      />
       {/* Header */}
       <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
