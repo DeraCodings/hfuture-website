@@ -288,7 +288,7 @@ export default function Index() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Empowering Africa's{" "}
               <span className="bg-brand-gradient bg-clip-text text-transparent">
-                Web3 Future
+                Web3 Future One Block At a Time
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
