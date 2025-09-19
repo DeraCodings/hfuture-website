@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
   Users,
@@ -18,10 +19,18 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
 import SEO from "@/components/SEO";
 
 export default function Index() {
-  // Rotating background images for hero section
+  // Hero slider images
   const heroBackgroundImages = [
     "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030251/1755027563788_zpnz3i.jpg",
     "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030534/stella-27_gw4eiq.jpg",
@@ -30,17 +39,19 @@ export default function Index() {
     "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030530/stella-23_gdinja.jpg",
   ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [api, setApi] = useState<CarouselApi | null>(null);
+  const autoplayRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % heroBackgroundImages.length,
-      );
-    }, 3000); // Change image every 3 seconds
-
-    return () => clearInterval(interval);
-  }, [heroBackgroundImages.length]);
+    if (!api) return;
+    if (autoplayRef.current) window.clearInterval(autoplayRef.current);
+    autoplayRef.current = window.setInterval(() => {
+      api.scrollNext();
+    }, 4000);
+    return () => {
+      if (autoplayRef.current) window.clearInterval(autoplayRef.current);
+    };
+  }, [api]);
 
   const achievements = [
     {
@@ -261,25 +272,28 @@ export default function Index() {
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
-        {/* Rotating Background Images */}
-        <div className="absolute inset-0">
-          {heroBackgroundImages.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentImageIndex ? "opacity-60" : "opacity-0"
-              }`}
-            >
-              <img
-                src={image}
-                alt={`Hero background ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-          <div className="absolute inset-0 bg-brand-gradient opacity-10"></div>
-        </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Slider Background (no opacity effects) */}
+        <Carousel
+          className="absolute inset-0 h-full"
+          opts={{ loop: true, align: "start" }}
+          setApi={(c) => setApi(c)}
+        >
+          <CarouselContent className="h-full">
+            {heroBackgroundImages.map((image, index) => (
+              <CarouselItem key={index} className="h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] p-0">
+                <img
+                  src={image}
+                  alt={`Hero background ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 border-none shadow" />
+          <CarouselNext className="right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 border-none shadow" />
+        </Carousel>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-6 bg-brand-green-light text-brand-green border-brand-green/20">
               <MapPin className="w-3 h-3 mr-1" />
@@ -299,7 +313,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-brand-gradient hover:opacity-90 text-white text-lg px-8"
+                className="bg-brand-gradient hover:brightness-95 text-white text-lg px-8"
               >
                 Learn About Our Impact
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -307,7 +321,7 @@ export default function Index() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-brand-purple text-brand-purple hover:bg-brand-purple/5 text-lg px-8"
+                className="border-brand-purple text-brand-purple hover:bg-brand-purple/10 text-lg px-8"
               >
                 Partner With Us
               </Button>
@@ -387,7 +401,7 @@ export default function Index() {
                 creating pathways for African talent to participate meaningfully
                 in the global Web3 economy.
               </p>
-              <Button className="bg-brand-green hover:bg-brand-green/90 text-white">
+              <Button className="bg-brand-green hover:brightness-95 text-white">
                 Read Our Full Story
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -570,7 +584,7 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-brand-gradient hover:opacity-90 text-white"
+                className="bg-brand-gradient hover:brightness-95 text-white"
               >
                 Become a Partner
               </Button>
