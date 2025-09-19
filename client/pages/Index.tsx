@@ -41,15 +41,39 @@ export default function Index() {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const autoplayRef = useRef<number | null>(null);
 
+  // Preload images to prevent flicker when slides change
   useEffect(() => {
-    if (!api) return;
+    let loaded = 0;
+    const handleDone = () => {
+      loaded++;
+    };
+    heroBackgroundImages.forEach((src) => {
+      const img = new Image();
+      img.onload = handleDone;
+      img.onerror = handleDone;
+      img.src = src;
+    });
+  }, []);
+
+  // Autoplay with pause/resume controls
+  const startAutoplay = () => {
     if (autoplayRef.current) window.clearInterval(autoplayRef.current);
+    if (!api) return;
     autoplayRef.current = window.setInterval(() => {
       api.scrollNext();
-    }, 4000);
-    return () => {
-      if (autoplayRef.current) window.clearInterval(autoplayRef.current);
-    };
+    }, 5000);
+  };
+  const stopAutoplay = () => {
+    if (autoplayRef.current) {
+      window.clearInterval(autoplayRef.current);
+      autoplayRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    if (!api) return;
+    startAutoplay();
+    return stopAutoplay;
   }, [api]);
 
   const achievements = [
