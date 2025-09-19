@@ -305,7 +305,10 @@ export default function Index() {
         >
           <CarouselContent className="h-full">
             {heroBackgroundImages.map((image, index) => (
-              <CarouselItem key={index} className="h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] p-0">
+              <CarouselItem
+                key={index}
+                className="h-[520px] sm:h-[560px] md:h-[600px] lg:h-[640px] p-0"
+              >
                 <img
                   src={image}
                   alt={`Hero background ${index + 1}`}
@@ -314,7 +317,10 @@ export default function Index() {
                   decoding="async"
                   loading={index === 0 ? "eager" : "lazy"}
                   fetchPriority={index === 0 ? "high" : "auto"}
-                  style={{ transform: "translateZ(0)", backfaceVisibility: "hidden" }}
+                  style={{
+                    transform: "translateZ(0)",
+                    backfaceVisibility: "hidden",
+                  }}
                 />
               </CarouselItem>
             ))}
