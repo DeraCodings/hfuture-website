@@ -291,7 +291,7 @@ export default function Index() {
                 Web3 Future One Block At a Time
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-100 mb-8 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-3xl mx-auto">
               HfuturelHub is a psycho-tech blockchain educational platform
               onboarding underrepresented communities into sustainable Web3
               careers
