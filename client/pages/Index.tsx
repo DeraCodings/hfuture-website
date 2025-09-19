@@ -267,7 +267,7 @@ export default function Index() {
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentImageIndex ? "bg-slate-950/30" : ""
+                index === currentImageIndex ? "bg-slate-950/50" : ""
               }`}
             >
               <img
