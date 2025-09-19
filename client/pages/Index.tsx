@@ -285,7 +285,7 @@ export default function Index() {
               >
                 Impact
               </a>
-              <Button className="bg-brand-gradient hover:opacity-90 text-white">
+              <Button className="bg-brand-gradient hover:brightness-95 text-white">
                 Support Us
               </Button>
             </nav>
@@ -329,19 +329,21 @@ export default function Index() {
           <CarouselNext className="right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 text-gray-900 border-none shadow" />
         </Carousel>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-b from-black/70 via-black/40 to-transparent"></div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-6 bg-brand-green-light text-brand-green border-brand-green/20">
               <MapPin className="w-3 h-3 mr-1" />
               Based in Nigeria, Impacting Globally
             </Badge>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl text-black font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6 leading-tight">
               Empowering Africa's{" "}
               <span className="bg-brand-gradient bg-clip-text text-transparent">
                 Web3 Future One Block At a Time
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-black mb-8 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
               HfuturelHub is a psycho-tech blockchain educational platform
               onboarding underrepresented communities into sustainable Web3
               careers
