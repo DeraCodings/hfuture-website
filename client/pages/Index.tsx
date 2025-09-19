@@ -298,8 +298,10 @@ export default function Index() {
         {/* Slider Background (no opacity effects) */}
         <Carousel
           className="absolute inset-0 h-full"
-          opts={{ loop: true, align: "start" }}
+          opts={{ loop: true, align: "center", duration: 30 }}
           setApi={(c) => setApi(c)}
+          onMouseEnter={stopAutoplay}
+          onMouseLeave={startAutoplay}
         >
           <CarouselContent className="h-full">
             {heroBackgroundImages.map((image, index) => (
