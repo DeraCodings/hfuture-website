@@ -31,10 +31,11 @@ import SEO from "@/components/SEO";
 export default function Index() {
   // Hero slider images
   const heroBackgroundImages = [
-    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030251/1755027563788_zpnz3i.jpg",
-    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030534/stella-27_gw4eiq.jpg",
-    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030535/stella-55_ijhhqs.jpg",
-    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030530/stella-19_fwcz4q.jpg",
+    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1758303221/stella-19_fwcz4q_rmfafm.jpg",
+    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1758303198/stella-43_oif8j6_fhcd2k.jpg",
+    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1758303196/stella-55_ijhhqs_hxwkq9.jpg",
+    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1758303195/stella-23_gdinja_h036hu.jpg",
+    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1758303193/1755027563788_zpnz3i_qc642u.jpg"
   ];
 
   const [api, setApi] = useState<CarouselApi | null>(null);
