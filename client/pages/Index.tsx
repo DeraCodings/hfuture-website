@@ -33,9 +33,7 @@ export default function Index() {
   const heroBackgroundImages = [
     "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030251/1755027563788_zpnz3i.jpg",
     "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030534/stella-27_gw4eiq.jpg",
-    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030535/stella-55_ijhhqs.jpg",
-    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030530/stella-19_fwcz4q.jpg",
-    "https://res.cloudinary.com/dwzebmtzq/image/upload/v1755030530/stella-23_gdinja.jpg",
+
   ];
 
   const [api, setApi] = useState<CarouselApi | null>(null);
