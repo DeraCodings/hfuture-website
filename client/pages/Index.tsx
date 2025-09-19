@@ -285,13 +285,13 @@ export default function Index() {
               <MapPin className="w-3 h-3 mr-1" />
               Based in Nigeria, Impacting Globally
             </Badge>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl text-black font-bold mb-6 leading-tight">
               Empowering Africa's{" "}
               <span className="bg-brand-gradient bg-clip-text text-transparent">
                 Web3 Future One Block At a Time
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-800 mb-8 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-slate-500 mb-8 leading-relaxed max-w-3xl mx-auto">
               HfuturelHub is a psycho-tech blockchain educational platform
               onboarding underrepresented communities into sustainable Web3
               careers
