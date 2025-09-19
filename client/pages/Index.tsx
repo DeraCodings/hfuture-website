@@ -289,8 +289,8 @@ export default function Index() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 border-none shadow" />
-          <CarouselNext className="right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 border-none shadow" />
+          <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 text-gray-900 border-none shadow" />
+          <CarouselNext className="right-4 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 text-gray-900 border-none shadow" />
         </Carousel>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
