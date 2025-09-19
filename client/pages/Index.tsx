@@ -309,7 +309,12 @@ export default function Index() {
                 <img
                   src={image}
                   alt={`Hero background ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover select-none"
+                  draggable={false}
+                  decoding="async"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchPriority={index === 0 ? "high" : "auto"}
+                  style={{ transform: "translateZ(0)", backfaceVisibility: "hidden" }}
                 />
               </CarouselItem>
             ))}
