@@ -20,6 +20,7 @@ import Web3Development from "./pages/Web3Development";
 import CommunityBuilding from "./pages/CommunityBuilding";
 import IRLMeetups from "./pages/IRLMeetups";
 import Events from "./pages/Events";
+import Programs from "./pages/Programs";
 
 const queryClient = new QueryClient();
 
