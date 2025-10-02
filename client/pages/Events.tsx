@@ -96,6 +96,7 @@ export default function Events() {
                       className="luma-checkout--button inline-flex items-center justify-center rounded-md bg-brand-purple px-4 py-2 text-white hover:brightness-110 transition"
                       data-luma-action="checkout"
                       data-luma-event-id={ev.lumaEventId}
+                      target="_blank"
                     >
                       Register for Event
                     </a>
