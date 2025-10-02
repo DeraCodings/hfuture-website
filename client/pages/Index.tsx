@@ -355,7 +355,7 @@ export default function Index() {
                 className="bg-brand-gradient hover:brightness-95 text-white text-lg px-8"
               >
                 <Link to="/programs/blockchain-education">
-                  Our bootcamp
+                  Our Program
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
