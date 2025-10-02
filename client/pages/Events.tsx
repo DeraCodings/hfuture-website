@@ -43,24 +43,29 @@ const events = [
 export default function Events() {
   return (
     <>
-      <SEO title="Events | HFutureHub" description="Upcoming programs and events." />
+      <SEO
+        title="Events | HFutureHub"
+        description="Upcoming programs and events."
+      />
       <main className="py-16 lg:py-24">
         <section className="container mx-auto px-4 sm:px-6 lg:px-8">
           <header className="mb-10 text-center">
             <Badge className="mb-4 bg-brand-green-light text-brand-green border-brand-green/20">
               Upcoming Programs
             </Badge>
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Our Events
-            </h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">Our Events</h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Browse and register for our upcoming bootcamps, workshops and community meetups.
+              Browse and register for our upcoming bootcamps, workshops and
+              community meetups.
             </p>
           </header>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {events.map((ev) => (
-              <Card key={ev.title} className="overflow-hidden border-0 shadow-lg">
+              <Card
+                key={ev.title}
+                className="overflow-hidden border-0 shadow-lg"
+              >
                 <div className="relative h-48">
                   <img
                     src={ev.image}
@@ -73,7 +78,9 @@ export default function Events() {
                 </div>
                 <CardContent className="p-6 space-y-4">
                   <h3 className="text-xl font-semibold">{ev.title}</h3>
-                  <p className="text-sm text-muted-foreground">{ev.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {ev.description}
+                  </p>
                   <div className="flex flex-wrap items-center gap-4 text-sm">
                     <span className="inline-flex items-center gap-1">
                       <Calendar className="w-4 h-4" /> {ev.date} · {ev.time}
