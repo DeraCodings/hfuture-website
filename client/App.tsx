@@ -47,6 +47,7 @@ const App = () => (
             />
             <Route path="/programs/irl-meetups" element={<IRLMeetups />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/programs" element={<Programs />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
