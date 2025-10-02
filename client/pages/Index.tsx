@@ -273,12 +273,12 @@ export default function Index() {
               >
                 Mission
               </a>
-              <a
-                href="#achievements"
+              <Link
+                to="/programs"
                 className="text-sm font-medium hover:text-brand-purple transition-colors"
               >
-                Achievements
-              </a>
+                Our programs
+              </Link>
               <a
                 href="#impact"
                 className="text-sm font-medium hover:text-brand-purple transition-colors"
