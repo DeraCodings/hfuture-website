@@ -349,19 +349,14 @@ export default function Index() {
               careers
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-brand-gradient hover:brightness-95 text-white text-lg px-8"
-              >
-                Learn About Our Impact
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button asChild size="lg" className="bg-brand-gradient hover:brightness-95 text-white text-lg px-8">
+                <Link to="/programs/blockchain-education">
+                  Our bootcamp
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-brand-purple text-brand-purple hover:bg-brand-purple/10 text-lg px-8"
-              >
-                Partner With Us
+              <Button asChild size="lg" variant="outline" className="border-brand-purple text-brand-purple hover:bg-brand-purple/10 text-lg px-8">
+                <Link to="/events">Our events</Link>
               </Button>
             </div>
           </div>

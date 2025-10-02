@@ -19,6 +19,7 @@ import BlockchainEducation from "./pages/BlockchainEducation";
 import Web3Development from "./pages/Web3Development";
 import CommunityBuilding from "./pages/CommunityBuilding";
 import IRLMeetups from "./pages/IRLMeetups";
+import Events from "./pages/Events";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
               element={<CommunityBuilding />}
             />
             <Route path="/programs/irl-meetups" element={<IRLMeetups />} />
+            <Route path="/events" element={<Events />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
